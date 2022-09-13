@@ -24,6 +24,7 @@ Select.src = "img/select.png";
 backgroundimg.src = "img/bg.jpg";
 backgroundimg.onload = function (ev) {
     var pattern = context.createPattern(backgroundimg, "repeat");
+    console.log(window.screen,'window.screen')
     context.fillStyle = pattern;
     context.fillRect(0, 0, canvas.width, canvas.height);
     context.beginPath();
